@@ -1,0 +1,43 @@
+D rule cannot open position by itself it has to tell to account
+D account.processpositions
+D simulation must have start and end date
+D only give required into to a rule
+D add close time and price to an order
+D add trailing stop to a position
+D a configurable mechanism for rule and rulesystem and signals (for automatic optimization)
+D signal setup must be somehow that automatic optimization is possible
+D more account limits - equity check and margin validation
+D account.getstats 
+D a console to write rule and rule-system and signal (C# code runtime compilation) - load and save them
+D visualization
+D better charting (using open source tools) - candles and odlc histogram
+
+
+P different simulation setups: travel in OHLC methods
+P add pending order
+P ability to run multiple experts at the same time
+P expert can operate on multiple accounts
+P set default account for an expert
+P alert section so every custom code can add alerts 
+P more props for expert : author, versioning, dates, performance statistics
+P persistent accounts
+P strong typed properties
+P chart: show tooltip for candles
+P account currency
+P account comission
+P account vendor and comments
+P cleanup dataprovider static method
+P options for chart colors
+P set instruments and TF for expert
+Interact with MT4 to execute orders given by the expert and receive instrumnets
+Complete Integration with MT4
+Support complex charts e.g. custom timeframe and custom synthetic instruments
+support for inline/outline code for every parts (check)		
+support (convert) msql indicators/experts
+future: integration with other similar products: metastock, esignal, tradestation, fxcm
+internal support for news and rss  and calendar
+advanced trade management: set be level, trailing stop, ... like myfxconsole, fx strategy tester, wealth-lab
+take into account commodities, stocks, options, futures, t-bonds, ETFs (rebrand?)
+support for complex simulation and testing an expert
+
+move to web platform? maybe for customers signal, use amazon ECS

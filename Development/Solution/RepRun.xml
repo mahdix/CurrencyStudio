@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<RuntimeManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Experts />
+  <SignalDefinitions />
+  <PortfolioManagers />
+  <RootSignalGroup>
+    <GroupId>Signal Library</GroupId>
+    <Children />
+  </RootSignalGroup>
+  <CommonLibraries />
+  <DefaultPortfolioManagerName />
+  <DefaultExpertName />
+</RuntimeManager>

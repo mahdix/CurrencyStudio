@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46A5B527-2222-4D7F-89D6-29B840937B12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CurrencyStudio</RootNamespace>
+    <AssemblyName>CurrencyStudio</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScintillaNet, Version=2.2.3581.19319, Culture=neutral, PublicKeyToken=948d6c9751444115, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ScintillaNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.0.4.28685, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountDesigner.Designer.cs">
+      <DependentUpon>frmAccountDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountInspector.Designer.cs">
+      <DependentUpon>frmAccountInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonLib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonLib.Designer.cs">
+      <DependentUpon>frmCommonLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataProviderInspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataProviderInspector.Designer.cs">
+      <DependentUpon>frmDataProviderInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInput.Designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogs.Designer.cs">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarketProviderDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarketProviderDesigner.Designer.cs">
+      <DependentUpon>frmMarketProviderDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2.Designer.cs">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpertDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpertDesigner.Designer.cs">
+      <DependentUpon>frmExpertDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPortfolioManagers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPortfolioManagers.Designer.cs">
+      <DependentUpon>frmPortfolioManagers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectSignalDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectSignalDef.Designer.cs">
+      <DependentUpon>frmSelectSignalDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignalDebugger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignalDebugger.Designer.cs">
+      <DependentUpon>frmSignalDebugger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignalProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignalProperties.Designer.cs">
+      <DependentUpon>frmSignalProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignals.Designer.cs">
+      <DependentUpon>frmSignals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccountDesigner.resx">
+      <DependentUpon>frmAccountDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarketProviderDesigner.resx">
+      <DependentUpon>frmMarketProviderDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain2.resx">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpertDesigner.resx">
+      <DependentUpon>frmExpertDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPortfolioManagers.resx">
+      <DependentUpon>frmPortfolioManagers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignals.resx">
+      <DependentUpon>frmSignals.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyStudio.Core\CurrencyStudio.Core.csproj">
+      <Project>{7E55CC46-F1A9-4231-AF66-B4B4F7A966FE}</Project>
+      <Name>CurrencyStudio.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="art\Save as.png" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccountInspector.resx">
+      <DependentUpon>frmAccountInspector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonLib.resx">
+      <DependentUpon>frmCommonLib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataProviderInspector.resx">
+      <DependentUpon>frmDataProviderInspector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogs.resx">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectSignalDef.resx">
+      <DependentUpon>frmSelectSignalDef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignalDebugger.resx">
+      <DependentUpon>frmSignalDebugger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignalProperties.resx">
+      <DependentUpon>frmSignalProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="art\Add.png" />
+    <None Include="art\Cancel.png" />
+    <None Include="art\CloseNoSave.png" />
+    <None Include="art\CloseSave.png" />
+    <None Include="art\Delete.png" />
+    <None Include="art\MoveDown.png" />
+    <None Include="art\MoveUp.png" />
+    <None Include="art\New.png" />
+    <None Include="art\NewProperty.png" />
+    <None Include="art\OK.png" />
+    <None Include="art\SaveAs.png" />
+    <None Include="art\SetDefault.png" />
+    <None Include="art\Update.png" />
+    <None Include="art\Save.png" />
+    <None Include="art\Test.png" />
+    <None Include="art\Refresh.png" />
+    <None Include="art\Start.png" />
+    <None Include="art\Stop.png" />
+    <Content Include="SciLexer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SimulationProfile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

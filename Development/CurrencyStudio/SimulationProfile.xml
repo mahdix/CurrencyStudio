@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<simulationProfile name="test1">
+  <signals>
+    <signal class="MovingAverage" id="MA5">
+      <parameter name="period" value="5" />
+    </signal>
+  </signals>
+
+  <rules>
+    <rule class="SimpleRule" id="sr1"></rule>
+  </rules>
+
+</simulationProfile>
